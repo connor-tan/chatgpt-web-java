@@ -17,9 +17,13 @@ public class ChatTemplateDO {
 
     private String template;
 
+    private String templateName;
+
     private Integer industryId;
 
     private String industryName;
+
+    private String description;
 
     /**
      * 创建时间

@@ -89,11 +89,7 @@
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
-<<<<<<< HEAD
                     <artifactId>slf4j-simple</artifactId>
-=======
-                    <artifactId>slf4j-api</artifactId>
->>>>>>> origin/main
                 </exclusion>
             </exclusions>
         </dependency>
