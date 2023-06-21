@@ -178,10 +178,8 @@ public class EmailAbstractRegisterStrategy extends AbstractRegisterTypeStrategy 
                 .setExtra(FRONT_JWT_USERNAME, emailDO.getUsername())
                 .setExtra(ApplicationConstant.FRONT_JWT_REGISTER_TYPE_CODE, FrontUserRegisterTypeEnum.EMAIL.getCode())
                 .setExtra(FRONT_JWT_EXTRA_USER_ID, emailDO.getId()));
-
         // 记录登录日志
         loginLogService.loginSuccess(FrontUserRegisterTypeEnum.EMAIL, emailDO.getId(), userInfo.getBaseUserId());
-
         return LoginInfoVO.builder().token(StpUtil.getTokenValue()).baseUserId(userInfo.getBaseUserId()).build();
     }
 }
